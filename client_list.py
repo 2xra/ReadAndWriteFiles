@@ -3,17 +3,17 @@ def main():
     infile = open("clients.txt", "r")
 
     # line = infile.readline().rstrip("\n")
-    linenum = 1
+    count = 1
     # while line != "":
-    #    print(linenum.__str__() + ". " + line)
-    #    linenum += 1
+    #    print(count.__str__() + ". " + line)
+    #    count += 1
     #    line = infile.readline().rstrip("\n")
     # infile.close
 
     # another version
     for client in infile:
-        print(linenum, ". ", client.rstrip("\n"), sep="")
-        linenum += 1
+        print(count, ". ", client.rstrip("\n"), sep="")
+        count += 1
     infile.close
 
 
