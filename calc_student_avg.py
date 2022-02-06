@@ -8,4 +8,4 @@ output = open("student_avg.csv", "w")
 
 for index in student_file:
     St_Average = (int(index[1]) + int(index[2]) + int(index[3])) / 3
-    output.write(round(St_Average, 2).__str__() + "\n")
+    output.write(round(St_Average, 2).__str__() + ",\n")
